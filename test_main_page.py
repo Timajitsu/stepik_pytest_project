@@ -10,3 +10,7 @@ def test_guest_can_go_to_login_page(browser):
     page.should_be_login_link()
     page.should_be_login_form()
     page.should_be_register_form()
+
+
+
+
