@@ -43,3 +43,11 @@ class ProductPage(BasePage):
     def item_price_should_be_valid(self, current_item_price):
         item_in_the_cart_price = self.browser.find_element(*ProductPageLocators.ITEM_IN_THE_CART_PRICE).text
         assert item_in_the_cart_price == current_item_price
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def should_be_disappeared_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is not diappeared, but should be"

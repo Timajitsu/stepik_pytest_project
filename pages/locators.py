@@ -13,3 +13,4 @@ class ProductPageLocators():
     CURRENT_ITEM_PRICE = (By.CSS_SELECTOR, 'div p.price_color')
     ITEM_IN_THE_CART = (By.CSS_SELECTOR, '#messages > div:nth-child(1) strong')
     ITEM_IN_THE_CART_PRICE = (By.CSS_SELECTOR, 'div.alert-info  strong')
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, 'div.alert-success:nth-child(1) > div')
